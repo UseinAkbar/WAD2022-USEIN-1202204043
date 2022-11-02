@@ -7,7 +7,7 @@
                 $checkout = date("Y-m-d", strtotime("+$duration days", strtotime($checkin)));
                 $time = isset($_POST['time']) ? $_POST['time'] : '';
                 $tipe_mobil = isset($_POST['tipe_mobil']) ? $_POST['tipe_mobil'] : '';
-                $phone = isset($_POST['phone']) ? $_POST['phone'] : '';
+                $phone = isset($_GET['phone']) ? $_POST['phone'] : '';
                 $healthcare = isset($_POST['healthcare']) ? $_POST['healthcare'] :  NULL;
                 $driver= isset($_POST['driver']) ? $_POST['driver'] :  NULL;
                 $fuel= isset($_POST['fuel']) ? $_POST['fuel'] :  NULL;
@@ -60,7 +60,7 @@
                 </tr>
                 <tr>
                     <td class="book-number"><?php echo rand() ?></td>
-                    <td><?php echo $name ?></td>
+                    <td><?php echo $names ?></td>
                     <td><?php echo date($checkin) ?> <?php echo $time ?></td>
                     <td><?php echo $checkout; ?> <?php echo $time; ?></td>
                     <td><?php echo $tipe_mobil ?></td>
@@ -77,7 +77,7 @@
                                 </ul>
                         <?php }?>  
                     </td>
-                    <td><?= "Rp", number_format($total_price, 0, ",", "."); ?></td>
+                    <td><?= "Rp", number_format($total_prices, 0, ",", "."); ?></td>
                 </tr>
             </table>
         </section>
