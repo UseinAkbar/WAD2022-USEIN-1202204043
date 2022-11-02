@@ -35,6 +35,8 @@
                     </div>';
                     } else {
                         $state = '';
+                        $tipe = $_GET['tipe'];
+                        
                         switch ($tipe) {
                             case 'fortuner':
                                 $state = 'Toyota Fortuner';
