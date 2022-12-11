@@ -17,10 +17,6 @@
             <input type="text" name="merk" class="form-control bg-light" id="merk" value="" placeholder="Masukkan merk mobil">
         </div>
         <div class="mb-4">
-            <label for="tgl_beli" class="form-label">Tanggal Beli</label>
-            <input type="date" name="tgl_beli" class="form-control" id="date" value="">
-        </div>
-        <div class="mb-4">
             <label for="deskripsi" class="form-label">Deskripsi</label>
             <textarea id="deskripsi" name="deskripsi" rows="5" cols="30" value="" placeholder="Masukkan deskripsi mobil.."></textarea>
         </div>

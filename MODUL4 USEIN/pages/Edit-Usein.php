@@ -28,10 +28,6 @@
                 <input type="text" name="merk" class="form-control bg-light" id="merk" value="<?= $data['merk_mobil'] ?>">
             </div>
             <div class="mb-4">
-                <label for="tgl_beli" class="form-label">Tanggal Beli</label>
-                <input type="date" name="tgl_beli" class="form-control" id="date" value="<?= $data['tanggal_beli']?>">
-            </div>
-            <div class="mb-4">
                 <label for="deskripsi" class="form-label">Deskripsi</label>
                 <textarea id="deskripsi" name="deskripsi" rows="5" cols="30" value="" placeholder="Masukkan deskripsi mobil.."><?= $data['deskripsi'] ?></textarea>
             </div>
